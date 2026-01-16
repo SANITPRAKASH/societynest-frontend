@@ -21,7 +21,7 @@ export function Navbar() {
     if (path.includes('#')) {
       e.preventDefault();
       
-      const [routePath, hash] = path.split('#');
+      const [_routePath, hash] = path.split('#');
       
       // If we're already on the home page, just scroll
       if (location.pathname === '/' && hash) {
